@@ -1,8 +1,16 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+it("render screen", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  screen.debug();
+});
+
+it("testing text", () => {
+  const { getByText } = render(<App />);
+  const button = getByText("Switch Theme");
+  const h4 = getByText(/github/i);
+  expect(button).toBeInTheDocument();
+  expect(h4).toBeInTheDocument();
+  expect(button).toHaveTextContent("Switch Theme");
 });
