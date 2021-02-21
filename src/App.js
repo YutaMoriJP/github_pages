@@ -65,7 +65,7 @@ function App() {
         <Container>
           <Grid container spacing={1} justify="center">
             <Grid item xs={10} md={5} lg={4}>
-              <Paper elevation={20} className={classes.paper}>
+              <Paper elevation={22} className={classes.paper}>
                 <Typography variant="h4" className={classes.typography}>
                   Github pages
                 </Typography>
