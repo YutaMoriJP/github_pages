@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/YutaMoriJP/github-pages",
+  "homepage": "https://github.com/YutaMoriJP/github-pages/",
   "name": "github-pages-test",
   "version": "0.1.0",
   "private": true,
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "npx gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
